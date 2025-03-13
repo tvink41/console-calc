@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 class Program
 {
@@ -13,11 +14,22 @@ class Program
             int num2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("enter operation (plus, minus, divide, multiply) or 'exit' for exit:");
-            string operation = Console.ReadLine().ToLower(); 
+            string operation = Console.ReadLine().ToLower();
+            if (operation == "fuck")
+            {
+                Console.WriteLine("wait");
+                Thread.Sleep(1000);
+                Console.WriteLine("I know");
+                Thread.Sleep(1000);
+                Console.WriteLine("!!!!you are Bad human!!!!");
+                Thread.Sleep(2000);
+                break;
+            }
 
             if (operation == "exit") 
             {
                 Console.WriteLine("program end");
+                
                 break; 
             }
 
@@ -58,3 +70,4 @@ class Program
         }
     }
 }
+

@@ -15,8 +15,10 @@ class Program
 
             Console.WriteLine("enter operation (plus, minus, divide, multiply) or 'exit' for exit:");
             string operation = Console.ReadLine().ToLower();
+            
             if (operation == "fuck")
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("wait");
                 Thread.Sleep(1000);
                 Console.WriteLine("I know");
@@ -24,6 +26,18 @@ class Program
                 Console.WriteLine("!!!!you are Bad human!!!!");
                 Thread.Sleep(2000);
                 break;
+            }
+            if (operation == "green")
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            if (operation == "blue")
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+            }
+            if (operation == "red")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
             }
 
             if (operation == "exit") 

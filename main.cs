@@ -39,6 +39,10 @@ class Program
             {
                 Console.ForegroundColor = ConsoleColor.Red;
             }
+            if (operation == "white")
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+            }
 
             if (operation == "exit") 
             {
@@ -84,4 +88,3 @@ class Program
         }
     }
 }
-
